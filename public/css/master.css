@@ -200,3 +200,20 @@ img.modaalKnop {
   91.69% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
   100% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
 }
+
+@media screen and (max-width: 400px) {
+  .navlinks{
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 272px) {
+  .navlinks{
+    height: 310px;
+  }
+}
+@media screen and (max-width: 227px) {
+  .navlinks{
+    height: 375px;
+  }
+}

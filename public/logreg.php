@@ -155,7 +155,7 @@ require '../private/dbconn.php';
       <label for="email">Email</label> <br>
       <input type="text" name="email" id="email"> <br>
       <label for="password">Password</label> <br>
-      <input type="text" name="password" id="password"> <br>
+      <input type="password" name="password" id="password"> <br>
       <input type="submit" name="register" value="Register">
     </form>
 

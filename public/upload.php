@@ -47,7 +47,7 @@ if (isset($_FILES['image'])) {
       $description = filter_var($_POST['description'], FILTER_SANITIZE_STRING);
       $tag = filter_var($_POST['tag'], FILTER_SANITIZE_STRING);
       $linkToImage = "uploads/" . $file_name;
-      $sql = "INSERT INTO posts (title, description, imagelink, tag) VALUES (?, ?, ?, ?)";
+      $sql = "INSERT INTO posts (title, description, imagelink, tag, author) VALUES (?, ?, ?, ?, ?)";
 
       $statement = $conn->prepare($sql);
 
@@ -55,7 +55,8 @@ if (isset($_FILES['image'])) {
         $title,
         $description,
         $linkToImage,
-        $tag
+        $tag,
+        $_SESSION['gebruiker_id']
       ];
 
       $statement->execute($data);
